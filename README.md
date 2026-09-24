@@ -1,102 +1,73 @@
 🛡️ AI Smart CCTV Weapon Detection System
 
-«An AI-powered smart surveillance system for detecting weapons and suspicious activities from CCTV video streams using Computer Vision and Deep Learning.»
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-red?logo=opencv&logoColor=white" alt="OpenCV"/>
-  <img src="https://img.shields.io/badge/YOLO-Object%20Detection-green" alt="YOLO"/>
-  <img src="https://img.shields.io/badge/Node.js-Backend-green?logo=node.js&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/Express.js-API-black?logo=express&logoColor=white" alt="Express.js"/>
-  <img src="https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb&logoColor=white" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/React-Dashboard-blue?logo=react&logoColor=white" alt="React"/>
+  <strong>An AI-powered smart surveillance system for intelligent CCTV monitoring and weapon detection.</strong>
+</p><p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-red?logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/YOLO-Object%20Detection-green" alt="YOLO">
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express.js-API-black?logo=express&logoColor=white" alt="Express.js">
+  <img src="https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/React-Dashboard-blue?logo=react&logoColor=white" alt="React">
 </p>---
 
 📌 Overview
 
-Traditional CCTV systems mainly record video footage and depend on continuous human monitoring. Monitoring multiple camera feeds manually can make it difficult to identify critical incidents quickly.
+The AI Smart CCTV Weapon Detection System is an intelligent surveillance solution designed to analyze CCTV video streams using Artificial Intelligence, Computer Vision, and Deep Learning.
 
-The AI Smart CCTV Weapon Detection System uses Artificial Intelligence and Computer Vision to analyze CCTV footage and identify potentially dangerous objects or suspicious activities.
+Unlike conventional CCTV systems that primarily record footage for manual review, this project aims to automatically analyze video frames, detect relevant objects such as weapons and people, and preserve evidence of detected incidents.
 
-The system is designed to assist security personnel by automatically analyzing video streams, detecting relevant objects, and preserving evidence for later review.
+The system combines an AI-based detection pipeline with backend services, database storage, and a web-based monitoring interface.
 
 ---
 
 🎯 Problem Statement
 
-Conventional CCTV surveillance relies heavily on human observation. Continuous monitoring of multiple camera feeds can be challenging and may result in delayed identification of security incidents.
+Traditional CCTV surveillance requires continuous human monitoring of multiple camera feeds. This can make identifying critical security incidents difficult and time-consuming.
 
-This project aims to develop an intelligent surveillance solution that can:
+The objective of this project is to develop an AI-assisted surveillance system capable of:
 
-- Automatically analyze CCTV video streams
-- Detect weapons using AI-based object detection
-- Identify people and relevant objects
-- Capture evidence of detected incidents
-- Provide detection information through a centralized system
+- Analyzing CCTV / RTSP video streams
+- Detecting weapons using object detection
+- Detecting people and relevant objects
+- Processing video frames automatically
+- Capturing evidence of detected incidents
+- Storing detection information
+- Presenting results through a monitoring dashboard
 
 ---
 
 🚀 Key Features
 
 - 🔍 AI-based object detection
-- 📹 CCTV / RTSP video stream processing
 - 🔫 Weapon detection
 - 👤 Person detection
+- 📹 CCTV / RTSP stream processing
 - 🧠 Computer Vision-based analysis
-- 📸 Automatic evidence capture
 - ⚡ Real-time video processing
+- 📸 Evidence frame capture
 - 🌐 Backend API integration
-- 📊 Web-based monitoring dashboard
 - 🗄️ Detection data storage
+- 📊 Web-based monitoring dashboard
 
 ---
 
 🧠 AI & Computer Vision
 
-The AI/ML component forms the core of the surveillance system.
+The AI/ML pipeline is responsible for analyzing incoming video frames and identifying objects relevant to the surveillance system.
 
 Detection Pipeline
 
-+----------------------+
-| CCTV / RTSP Camera   |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Video Stream         |
-| Processing (OpenCV)  |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| YOLO Detection Model |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Object / Weapon      |
-| Detection            |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Confidence Filtering |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Evidence Capture     |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Backend API          |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Dashboard / Database |
-+----------------------+
+flowchart TD
+    A["CCTV / RTSP Camera"] --> B["Video Stream"]
+    B --> C["OpenCV Processing"]
+    C --> D["YOLO Detection Model"]
+    D --> E["Object / Weapon Detection"]
+    E --> F["Confidence Filtering"]
+    F --> G["Evidence Capture"]
+    G --> H["Backend API"]
+    H --> I["Dashboard / Database"]
 
 AI/ML Technologies
 
@@ -163,8 +134,8 @@ AI/ML Technologies
 
 Category| Technologies
 Programming| Python, JavaScript
-Computer Vision| OpenCV
 AI / ML| YOLO, Deep Learning
+Computer Vision| OpenCV
 Backend| Node.js, Express.js
 Database| MongoDB
 Frontend| React
@@ -176,30 +147,24 @@ Version Control| Git & GitHub
 📂 Project Structure
 
 AI-Smart-CCTV-Weapon-Detection/
-│
 ├── backend/
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   └── server.js
-│
 ├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
 ├── ai/
-│   ├── models/
-│   ├── detection/
-│   └── scripts/
-│
 ├── assets/
-│   └── screenshots/
-│
 ├── README.md
 └── requirements.txt
 
-«Update the structure above if the repository uses different folder names.»
+Components
+
+Component| Purpose
+"backend/"| Backend services and APIs
+"frontend/"| Web-based monitoring interface
+"ai/"| AI/ML and detection components
+"assets/"| Images, screenshots and project resources
+"README.md"| Project documentation
+"requirements.txt"| Python dependencies
+
+«The structure above represents the major project components. Additional files and folders may exist depending on the implementation.»
 
 ---
 
@@ -214,11 +179,11 @@ cd AI-Smart-CCTV-Weapon-Detection
 
 python -m venv venv
 
-Windows:
+Windows
 
 venv\Scripts\activate
 
-Linux / macOS:
+Linux / macOS
 
 source venv/bin/activate
 
@@ -233,14 +198,14 @@ npm install
 
 5. Configure Environment Variables
 
-Create a ".env" file according to the backend configuration.
+Create a ".env" file according to the project configuration.
 
 Example:
 
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 
-«Never commit API keys, passwords, database credentials, or other secrets to GitHub.»
+«Never upload passwords, API keys, database credentials, camera credentials, or other sensitive information to GitHub.»
 
 6. Start the Backend
 
@@ -256,7 +221,7 @@ npm start
 
 📹 CCTV / RTSP Input
 
-The system can process video from sources such as:
+The system can work with different video sources depending on the implementation:
 
 - CCTV cameras
 - IP cameras
@@ -268,31 +233,23 @@ Example RTSP format:
 
 rtsp://username:password@camera-ip:port/stream
 
-«Never publish real camera credentials or private RTSP URLs.»
+«Do not publish real camera credentials or private RTSP URLs.»
 
 ---
 
 🔎 Detection Workflow
 
-The system follows the following workflow:
+The overall processing workflow can be summarized as:
 
-Video Input
-     ↓
-Frame Capture
-     ↓
-OpenCV Processing
-     ↓
-YOLO Inference
-     ↓
-Object Detection
-     ↓
-Confidence Check
-     ↓
-Evidence Capture
-     ↓
-Backend Processing
-     ↓
-Database / Dashboard
+flowchart TD
+    A["Video Input"] --> B["Frame Capture"]
+    B --> C["OpenCV Processing"]
+    C --> D["YOLO Inference"]
+    D --> E["Object Detection"]
+    E --> F["Confidence Check"]
+    F --> G["Evidence Capture"]
+    G --> H["Backend Processing"]
+    H --> I["Database / Dashboard"]
 
 ---
 
@@ -301,22 +258,22 @@ Database / Dashboard
 When a relevant detection occurs, the system can preserve information such as:
 
 - Detection frame
-- Timestamp
 - Detected object
 - Confidence score
+- Timestamp
 - Associated camera information
 
-This helps security personnel review detected incidents.
+This allows detected events to be reviewed after they occur.
 
 ---
 
 📊 Monitoring Dashboard
 
-The web dashboard provides a centralized interface for monitoring detection results.
+The web dashboard provides a centralized interface for viewing detection-related information.
 
-Depending on the implementation, the dashboard can display:
+Depending on the implementation, the dashboard may display:
 
-- Live or processed camera feed
+- Camera feed
 - Detection status
 - Detected objects
 - Confidence scores
@@ -328,14 +285,14 @@ Depending on the implementation, the dashboard can display:
 
 🧪 Testing
 
-The detection pipeline can be tested using:
+The system can be tested using:
 
 - Sample images
 - Recorded CCTV footage
 - Test videos
 - Controlled camera streams
 
-Testing can evaluate:
+Testing can focus on:
 
 - Detection accuracy
 - False detections
@@ -347,15 +304,14 @@ Testing can evaluate:
 
 🔐 Security Considerations
 
-Because this project deals with surveillance data:
+Because the system processes surveillance-related data:
 
-- Do not expose private CCTV streams.
-- Do not commit passwords or API keys.
-- Store sensitive credentials using environment variables.
+- Keep CCTV credentials private.
+- Never commit passwords or API keys.
+- Use environment variables for sensitive configuration.
 - Restrict access to stored evidence.
 - Secure backend APIs before deployment.
 - Follow applicable privacy and surveillance regulations.
-- Treat AI detection as an assistance mechanism rather than a sole basis for security decisions.
 
 ---
 
@@ -368,7 +324,7 @@ Because this project deals with surveillance data:
 - 🎯 Multi-object tracking
 - 📹 Improved RTSP stream management
 - ☁️ Cloud deployment
-- 📊 Advanced analytics dashboard
+- 📊 Advanced analytics
 - 🔐 Role-based authentication
 - ⚡ AI inference optimization
 - 📦 Automated model training and evaluation
@@ -390,6 +346,7 @@ Ritesh Tiwari| Project Development
 This project was developed as a Major Project by students of:
 
 B.Tech — Computer Science & Engineering (AI & ML)
+
 United College of Engineering and Research, Prayagraj
 Dr. A.P.J. Abdul Kalam Technical University (AKTU)
 
@@ -397,7 +354,7 @@ Dr. A.P.J. Abdul Kalam Technical University (AKTU)
 
 📚 Learning Outcomes
 
-Through this project, we worked with:
+This project provided practical experience in:
 
 - Artificial Intelligence
 - Machine Learning
@@ -406,9 +363,9 @@ Through this project, we worked with:
 - Video Processing
 - Backend API Development
 - Database Integration
-- Web Dashboard Development
+- Web Application Development
 - Git & GitHub
-- Team-based Software Development
+- Team-based Project Development
 
 ---
 
@@ -416,7 +373,7 @@ Through this project, we worked with:
 
 This project is developed for educational and research purposes.
 
-AI-based detection systems may produce false positives or false negatives and should not be considered a replacement for professional security personnel or emergency services.
+AI-based detection systems can produce false positives and false negatives. The system should therefore be treated as an assistance tool and should not be considered a replacement for professional security personnel or emergency services.
 
 ---
 
