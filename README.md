@@ -333,11 +333,17 @@ Because the system processes surveillance-related data:
 
 👨‍💻 Contributors
 
-Name| Role
-Prakhar Rai| Project Lead & Project Development
-Raghu Dev Singh| Project Development
-Nitish Sonkar| Project Development
-Ritesh Tiwari| Project Development
+Prakhar Rai
+Project Lead & Project Development
+
+Raghu Dev Singh
+Project Development
+
+Nitish Sonkar
+Project Development
+
+Ritesh Tiwari
+Project Development
 
 ---
 
